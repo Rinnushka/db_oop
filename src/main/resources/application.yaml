@@ -17,9 +17,9 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQL10Dialect
   datasource:
     #todo свои данные для подключения к БД
-    url: jdbc:postgresql://name_server.asd.qwerty.ru:6544 # url для подключения к БД в формате jdbc строки
-    username: # логин для подключения к БД
-    password: # пароль для подключения к БД
+    url: jdbc:postgresql://localhost:5432/labdb # url для подключения к БД в формате jdbc строки
+    username: labdb # логин для подключения к БД
+    password: 1q2w3e # пароль для подключения к БД
 
     driver-class-name: org.postgresql.Driver
     tomcat:

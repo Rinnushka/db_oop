@@ -1,3 +1,4 @@
+-- drop table web_ui.country cascade;
 create table web_ui.country
 (
     id       bigint       not null  primary key,
@@ -6,6 +7,7 @@ create table web_ui.country
     region   varchar(255) not null
 );
 
+-- drop table web_ui.employee cascade;
 create table web_ui.employee
 (
     id            bigint       not null
@@ -17,6 +19,7 @@ create table web_ui.employee
     second_name   varchar(255) not null
 );
 
+-- drop table web_ui.license cascade;
 create table web_ui.license
 (
     id                bigint       not null
@@ -30,6 +33,7 @@ create table web_ui.license
         constraint empl_fk references web_ui.employee
 );
 
+-- drop table web_ui.office cascade;
 create table web_ui.office
 (
     id                  bigint       not null
@@ -53,6 +57,7 @@ create table web_ui.office
             references web_ui.country
 );
 
+-- drop table web_ui."order" cascade;
 create table web_ui."order"
 (
     id                      bigint       not null
@@ -67,6 +72,7 @@ create table web_ui."order"
             references web_ui.employee
 );
 
+-- drop table web_ui.notarial_office cascade;
 create table web_ui.notarial_office
 (
     id_office   bigint not null
@@ -77,8 +83,13 @@ create table web_ui.notarial_office
             references web_ui.employee
 );
 
+-- DROP SEQUENCE web_ui.seq_country;
 create sequence web_ui.seq_country start 30 INCREMENT BY 1;
+-- DROP SEQUENCE web_ui.seq_emloyee;
 create sequence web_ui.seq_emloyee start 30 INCREMENT BY 1;
+-- DROP SEQUENCE web_ui.seq_license;
 create sequence web_ui.seq_license start 30 INCREMENT BY 1;
+-- DROP SEQUENCE web_ui.seq_office;
 create sequence web_ui.seq_office start 30 INCREMENT BY 1;
+-- DROP SEQUENCE web_ui.seq_entities;
 create sequence web_ui.seq_entities start 30 INCREMENT BY 1;
