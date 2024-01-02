@@ -34,4 +34,4 @@ spring:
     enabled: true
 
 app:
-  baseUrl: http://localhost:10500
+  baseUrl: http://localhost:10500 # для git
